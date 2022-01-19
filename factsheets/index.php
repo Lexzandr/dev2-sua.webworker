@@ -166,4 +166,4 @@ $APPLICATION->SetTitle("Фактшит по фондам");
 		$('p.setTextDate').html(dateThis);
 	});
 </script>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?> 
