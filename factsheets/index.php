@@ -36,7 +36,7 @@ $APPLICATION->SetTitle("Фактшит по фондам");
 			);?>
 		</div>
 		<div class="new-slider__right">
-			<img src="/local/templates/main/img/factsheets_banner2.png"> <img src="/local/templates/main/img/factsheets_banner_mobile.png">
+			<img src="/local/templates/main/img/factsheets_banner3.png"> <img src="/local/templates/main/img/factsheets_banner3_mobile.png">
 		</div>
 	</section>
 </div>
@@ -158,12 +158,22 @@ $APPLICATION->SetTitle("Фактшит по фондам");
 <!-- закрываем следующим div-ом верстку, чтобы футер был по ширине страницы а не в блоке main_cont -->
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-business-days/1.2.0/index.min.js"></script>
 <script>
 	$(document).ready(function(){
-		var dateFrom = moment().subtract(1, 'month').endOf('month').format('DD.MM.YYYY')
-		var dateThis = "Профили фондов по состоянию на " + dateFrom
-		//console.log(dateThis);
-		$('p.setTextDate').html(dateThis);
+		
+		// Последний календарный день предыдущего месяца
+		// var today = moment().subtract(1, 'month').endOf('month').format('DD.MM.YYYY');
+		// var dateThis = "Профили фондов по состоянию на " + today;
+		// //console.log(dateThis);
+		// $('p.setTextDate').html(dateThis);
+
+		// Последний рабочий день предыдущего месяца
+		var today = moment().subtract(1, 'month').endOf('month')
+		var dateThis = moment(today, 'DD-MM-YYYY').prevBusinessDay().format('DD.MM.YYYY')
+		//console.log(dateThis)
+		$('p.setTextDate').html("Профили фондов по состоянию на " + dateThis)
+
 	});
 </script>
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?> 
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
