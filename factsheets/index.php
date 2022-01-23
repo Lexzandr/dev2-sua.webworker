@@ -1,9 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
-$APPLICATION->SetPageProperty("keywords", "Фактшит по фондам");
-$APPLICATION->SetPageProperty("description", "Фактшит по фондам");
-$APPLICATION->SetTitle("Фактшит по фондам");
+$APPLICATION->SetPageProperty("keywords", "Профили фондов Сбер Управления Активами");
+$APPLICATION->SetPageProperty("description", "Профили фондов Сбер Управления Активами");
+$APPLICATION->SetTitle("Профили фондов Сбер Управления Активами");
 ?>
 <style>
 	.factsheets {padding:100px;background-color: #fff;box-sizing: border-box;position:relative;min-height:380px}
