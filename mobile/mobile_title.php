@@ -1,0 +1,1 @@
+<h3 class="mob-page__section-title">Заголовок</h3>
