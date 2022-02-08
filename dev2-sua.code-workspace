@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "sber-am",
+			"path": "sber-am"
 		}
 	],
 	"settings": {
