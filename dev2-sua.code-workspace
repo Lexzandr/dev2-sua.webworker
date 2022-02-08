@@ -5,6 +5,7 @@
 		}
 	],
 	"settings": {
-		"atlascode.jira.enabled": false
+		"atlascode.jira.enabled": false,
+		"atlascode.bitbucket.explorer.refreshInterval": 0
 	}
 }
