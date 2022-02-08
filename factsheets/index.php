@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+
 $APPLICATION->SetPageProperty("keywords", "Профили фондов Сбер Управления Активами");
 $APPLICATION->SetPageProperty("description", "Профили фондов Сбер Управления Активами");
 $APPLICATION->SetTitle("Профили фондов Сбер Управления Активами");
